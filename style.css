@@ -252,3 +252,16 @@ body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.erro
 .blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
 	width: 75%;
 }
+
+@font-face {
+  font-family: "Computerfont";
+  src: url("computerfont.woff2");
+}
+
+h1.site-title {
+  font-family: Computerfont;
+  font-size: 4rem;
+  text-shadow: 0px 0px 5px black;
+  text-transform: none;
+  font-weight: normal;
+}
