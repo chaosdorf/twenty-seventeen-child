@@ -185,6 +185,7 @@ function twentyseventeen_social_links_icons() {
 		'instagram.com'   => 'instagram',
 		'linkedin.com'    => 'linkedin',
 		'mailto:'         => 'envelope-o',
+		'chaos.social'    => 'mastodon',
 		'medium.com'      => 'medium',
 		'pinterest.com'   => 'pinterest-p',
 		'pscp.tv'         => 'periscope',
