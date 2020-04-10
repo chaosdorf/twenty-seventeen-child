@@ -13,3 +13,14 @@ function twentyseventeen_child_scripts() {
         array(), false, "(prefers-color-scheme: dark)"
     );
 }
+
+// Add chaos.social => Mastodon
+add_filter('twentyseventeen_social_links_icons', function($social_links_icons) {
+    $social_links_icons['chaos.social'] = 'mastodon';
+    return $social_links_icons;
+});
+
+// Add the SVG for the icon
+add_action('wp_footer', function() {
+    require_once get_stylesheet_directory() . '/assets/svg-icons.svg';
+}, 1000);
