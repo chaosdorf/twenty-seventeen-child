@@ -11,4 +11,5 @@ but with three modifications:
  * the color scheme changes automatically based on `prefers-color-scheme`
  * we use Open Sans as the main font
  * the columns for static pages without a sidebar are wider
+ * the social media icons have an icon for Mastodon
  * the site title uses Computerfont
