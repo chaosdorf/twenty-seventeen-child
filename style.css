@@ -255,7 +255,7 @@ body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.erro
 
 @font-face {
   font-family: "Computerfont";
-  src: url("computerfont.woff2");
+  src: url("/wp-content/themes/twenty-seventeen-child-master/computerfont.woff2");
 }
 
 h1.site-title {
