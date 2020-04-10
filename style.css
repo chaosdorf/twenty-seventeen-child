@@ -258,7 +258,7 @@ body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.erro
   src: url("/wp-content/themes/twenty-seventeen-child-master/assets/computerfont.woff2");
 }
 
-h1.site-title {
+.site-title {
   font-family: Computerfont;
   font-size: 4rem;
   text-shadow: 0px 0px 5px black;
