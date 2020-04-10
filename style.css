@@ -265,3 +265,7 @@ body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.erro
   text-transform: none;
   font-weight: normal;
 }
+
+.social-navigation, .site-info {
+  width: auto;
+}
