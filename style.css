@@ -269,3 +269,7 @@ body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.erro
 .social-navigation, .site-info {
   width: auto;
 }
+
+.colors-dark fieldset {
+     background: inherit;
+}
