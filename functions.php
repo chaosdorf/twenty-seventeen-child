@@ -17,6 +17,7 @@ function twentyseventeen_child_scripts() {
 // Add chaos.social => Mastodon
 add_filter('twentyseventeen_social_links_icons', function($social_links_icons) {
     $social_links_icons['chaos.social'] = 'mastodon';
+    $social_links_icons['wiki.hackerspaces.org'] = 'hackerspaces';
     return $social_links_icons;
 });
 
