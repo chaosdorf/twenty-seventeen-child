@@ -9,6 +9,7 @@
 add_filter( 'body_class', function( $classes ) {
     return array_diff( $classes, array( 'home', 'blog', 'twentyseventeen-front-page' ) );
 } );
+wp_enqueue_style("landing-page-style", "/landing-page/res/css/main.css");
 get_header(); ?>
 
 <div id="primary" class="content-area">
