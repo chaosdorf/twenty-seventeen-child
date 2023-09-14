@@ -6,12 +6,17 @@
  * appear.
  * Learn more: https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
+add_filter( 'body_class', function( $classes ) {
+    return array_diff( $classes, array( 'home', 'blog', 'twentyseventeen-front-page' ) );
+} );
 get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
-		This is static content.
+		<?php
+        include(ABSPATH . "landing-page/index.html");
+        ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
