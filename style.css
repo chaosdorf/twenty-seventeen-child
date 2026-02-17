@@ -274,5 +274,41 @@ body, button, input, select, textarea {
 }
 
 .colors-dark fieldset {
-     background: inherit;
+  background: inherit;
+}
+
+/*
+ * Add prefers-color-scheme support for ICS Calendar based on their css for darkmode config option
+ *  - css variables taken from https://plugins.trac.wordpress.org/browser/ics-calendar/trunk/assets/style.css?rev=3456056
+ *  - slightly increase specificity by selector duplication
+ */
+@media (prefers-color-scheme: dark) {
+  .ics-calendar.ics-calendar {
+        --r34ics--element--basic--date--color: var(--r34ics--color--white);
+        --r34ics--element--events--color: var(--r34ics--color--white);
+        --r34ics--element--hover-block--background: var(--r34ics--color--black);
+        --r34ics--element--hover-block--border-color: var(--r34ics--color--dimgray);
+        --r34ics--element--lightbox-close--background: var(--r34ics--color--white);
+        --r34ics--element--lightbox-close--color: var(--r34ics--color--black);
+        --r34ics--element--lightbox-content--background: var(--r34ics--color--black);
+        --r34ics--element--lightbox-content--color: var(--r34ics--color--white);
+        --r34ics--element--month--background: var(--r34ics--color--black);
+        --r34ics--element--month--day--background: var(--r34ics--color--trans30);
+        --r34ics--element--month--day--color: var(--r34ics--color--white);
+        --r34ics--element--month--events-li--border-bottom-color: var(--r34ics--color--dimgray);
+        --r34ics--element--month-label--color: var(--r34ics--color--white);
+        --r34ics--element--month--off--background: var(--r34ics--color--trans50);
+        --r34ics--element--month--off--color: var(--r34ics--color--gray);
+        --r34ics--element--month--th--background: var(--r34ics--color--dimgray);
+        --r34ics--element--month--th--color: var(--r34ics--color--white);
+        --r34ics--element--month--th-td--border-color: var(--r34ics--color--trans50);
+        --r34ics--element--month--today-day--background: var(--r34ics--color--gray);
+        --r34ics--element--month--today-day--color: var(--r34ics--color--white);
+        --r34ics--element--multiday--background: var(--r34ics--color--dimgray);
+        --r34ics--element--print--background: var(--r34ics--color--black);
+        --r34ics--element--print--border-color: var(--r34ics--color--trans50);
+        --r34ics--element--print--color: var(--r34ics--color--white);
+        --r34ics--element--select--background: var(--r34ics--color--trans30);
+        --r34ics--element--select--color: var(--r34ics--color--white);
+  }
 }
